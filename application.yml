@@ -31,6 +31,8 @@ spring:
 words: boat,book,vote,seat,backpack,partition,groundhog 
 
 ---
+words: fallback
+---
 spring:
   profiles: cold-noun
 words: icicle,refrigerator,blizzard,snowball
