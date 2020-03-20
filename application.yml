@@ -8,26 +8,36 @@ eureka:
 ---
 spring:
   profiles: ESSubject
+  application:
+    name: ESSubject
 words: I,You,He,She,It
 
 ---
 spring:
   profiles: ESVerb
+  application:
+    name: ESVerb
 words: ran,knew,had,saw,bought
 
 ---
 spring:
   profiles: ESArticle
+  application:
+    name: ESArticle
 words: a,the
 
 ---
 spring:
   profiles: ESAdjective
+  application:
+    name: ESAdjective
 words: reasonable,leaky,suspicious,ordinary,unlikely
 
 ---
 spring:
   profiles: ESNoun
+  application:
+    name: ESNoun
 words: boat,book,vote,seat,backpack,partition,groundhog 
 
 ---
@@ -35,4 +45,6 @@ words: fallback
 ---
 spring:
   profiles: cold-noun
+  application:
+    name: ESNoun
 words: icicle,refrigerator,blizzard,snowball
