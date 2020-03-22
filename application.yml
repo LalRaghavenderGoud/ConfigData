@@ -5,6 +5,14 @@ eureka:
       defaultZone: http://eureka-primary:8010/eureka,http://eureka-secondary:8012/eureka/,http://eureka-tertiary:8013/eureka/
   instance:
       instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}     
+  
+# Tell Spring Boot Actuator to expose the hystrix.stream endpoint.
+# This is listened to by the Hystrix dashboard for monitoring purposes:
+management: 
+  endpoints: 
+    web: 
+      exposure: 
+        include: 'hystrix.stream'
 ---
 spring:
   profiles: ESSubject
