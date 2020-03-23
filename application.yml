@@ -56,10 +56,4 @@ spring:
   application:
     name: ESNoun
 words: icicle,refrigerator,blizzard,snowball
----
-spring:
-  application:
-    name: BusServer
-wordConfig:
-  luckyWord: Raghav
-  preamble: Myself
+
