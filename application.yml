@@ -12,7 +12,7 @@ management:
   endpoints: 
     web: 
       exposure: 
-        include: health,info,bus-refresh,'hystrix.stream'
+        include: 'hystrix.stream'
 ---
 spring:
   profiles: ESSubject
